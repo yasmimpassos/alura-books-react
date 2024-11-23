@@ -55,7 +55,7 @@ function Pesquisa() {
             <Subtitulo>Encontre seu livro em nossa estante.</Subtitulo>
             <Input
                 placeholder="Escreva sua próxima leitura"
-                onBlur={evento => fazPesquisa(evento)}
+                onChange={evento => fazPesquisa(evento)}
             />
             <Resultados>
                 { livrosPesquisados.map( livro => (
