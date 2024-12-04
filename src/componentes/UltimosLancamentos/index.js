@@ -23,14 +23,14 @@ function UltimosLancamentos() {
     return (
         <UltimosLancamentosContainer>
             <Titulo
-                cor={"#EB9B00"}
-                tamanhoFonte={"36px"}
+                $cor={"#EB9B00"}
+                $tamanhofonte={"36px"}
             >
                 ÚLTIMOS LANÇAMENTOS
             </Titulo>
             <NovosLivrosContainer>
                 { livros.map( livro => (
-                    <img src={livro.src}/>
+                    <img src={livro.src} key={livro.id}/>
                 ) ) }
             </NovosLivrosContainer>
             <CardRecomenda
